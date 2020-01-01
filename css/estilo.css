@@ -1,0 +1,541 @@
+/*
+* 
+* @author Vinicius Margotti
+* @version 0.1
+*/
+/* ========================= layout ======================== */
+@import url(../bootstrap/css/mdb.min.css);
+html,body{
+	height: 100%;
+  overflow: auto; 
+  font-size: 14px;
+}
+
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+
+  body{
+    background: url('../imagens/pizza9.jpg') no-repeat;
+    background-attachment: fixed; 
+    font-family: Helvetica,Arial,Sans-serif; 
+    overflow-x: hidden;
+    background-size: 100%;
+  }
+
+  
+    ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #666;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #666;
+  -webkit-border-radius: 3px;
+}
+
+
+
+  select{
+   padding: 5px;
+   border: 0.5px solid black;
+   border-radius: 6px;
+ }	
+
+ /* -- Barra de navegação -- */
+
+ nav.navbar-transparente {
+   padding: 15px 0px;
+   background: rgba(0, 0, 0, 0.3);
+   border: none;
+   position: relative;
+ }
+
+ .navbar-brand{
+   padding: 5px 15px;
+ }
+
+ .divisor{
+   width: 1px;
+   height: 16px;
+   background: white;
+   margin: 16px 10px;
+ }
+
+ .navbar-inverse .navbar-nav>li>a ,footer .nav a {
+   color: #fff;
+   font-weight:700;
+   transition: all 1s;
+
+ }
+
+ .navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+  color: black;
+  background: #fff;
+  border-radius: 20px;
+  transition: all 1s;
+  
+  
+}
+
+
+
+
+
+.logo{             
+  height: 200px;
+  transition:all 2s;
+}
+.logo:hover{
+  height: 240px;
+  transition:all 2s;
+}
+
+.capa{
+ position: relative;
+ display: table ;
+ width: 100%;
+ height: 300px;
+ 
+}
+
+.informacao-capa{
+ background: rgba(0, 0, 0, 0.7);
+ color:white;
+ margin-bottom: 20px;
+ padding-bottom: 15px;
+ padding-top: 13px;
+ height: auto;
+}
+
+.capa-inscricao{
+ 
+  width: 50%;
+  padding: 40px;
+  color:black;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  background: #ebebeb;
+
+}
+
+
+
+
+.body-inscricao{
+ background:url(../imagens/pizza9.jpg);
+ background-size: 100%
+}
+
+.texto-capa{
+	text-align: left;
+	color: white;
+	display: table-cell;
+	vertical-align: bottom;
+	border: 1px solid white;
+}
+
+
+/* ========================= Tipografia ======================== */
+
+h1{
+	font-size: 100px;
+	font-weight: 600;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+
+h2{
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.04em;	
+}
+
+h3{
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.04em;	
+}
+
+
+/* ========================= Tela pedidos ======================== */
+
+.body-pedido{
+  background: url(../imagens/pizza9.jpg) no-repeat;
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed; 
+  font-family: Helvetica,Arial,Sans-serif; 
+  overflow-x: hidden;
+  overflow: hidden;
+  height: 100%;
+}
+
+#informacoes-pedido{
+  background: rgba(0,0,0,0.5);
+
+  height: 100%;
+}
+
+#barra-acoes{
+  
+	height: auto;
+	padding: 3px; 
+}
+
+#tela-pedido{
+  background: #f5fffb;
+  height: auto;
+  max-height: 84%;
+  overflow:auto;
+  padding: 0px;
+  background-size:100%; 
+  color: black;
+  
+
+
+}
+
+
+#produtos-escolhidos{
+ 
+  overflow: auto;
+  height: 210px;
+  
+}
+
+
+.tabelas{
+  display: none;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+#tabela_produtos{
+  margin: 3%;
+  width: 90%;
+}
+
+
+
+
+.btn-carrinho{
+  width: 90%;
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+  
+
+}
+
+
+
+.btn-produtos{
+ width: 32px;
+ transition: all 0.4s;
+
+}
+
+th{
+  background:#565656;
+  color: white;
+}
+
+
+.btn-prod{
+ background: transparent;
+ font-weight: 600;
+ color: black;
+ cursor: pointer;
+ border: 0;
+ text-align: left;
+}
+
+.btn-prod:hover{
+ background: transparent;
+ font-weight: 600;
+ color: red;
+ cursor: pointer;
+ border: 0;
+ text-align: left;
+ transition: all 0.2s;
+}
+
+
+
+
+
+.btn-opcoes{
+  text-align:center;
+  height:auto;
+  transition: all 0.3s;
+}
+
+
+.btn-opcoes:hover{
+  text-align:center;
+  height:auto;
+  margin-left: 40px;
+  transition: all 0.2s;
+  width: 90%;
+}
+
+
+
+
+.list-group-item{
+  color: white;
+}
+
+.list-group-item-total{
+ background: #565656;
+ border:none;
+ text-align: right;
+ font-size: 18px;
+}
+
+
+
+
+
+input[type="radio"] {
+  display:none;
+
+}
+
+input[type="radio"] + label {
+ 
+ 
+}
+
+input[type="radio"] + label span {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin:-2px 10px 0 0;
+  vertical-align:middle;
+  background:url(../imagens/check_radio.png) -38px top no-repeat;
+  cursor:pointer;
+  
+}
+
+input[type="radio"]:checked + label span {
+  background:url(../imagens/check_radio.png) -57px top no-repeat;
+
+}
+
+
+/* ========================= Fim tela pedidos ======================== */
+
+/* ========================= Regula dimensao celular ======================== */
+
+@media only screen and (max-width: 800px) {
+
+	body{
+    background: url('../imagens/pizza8.jpg') no-repeat;
+    background-attachment: fixed; 
+    font-family: Helvetica,Arial,Sans-serif; 
+    overflow-x: hidden;
+    background-size: 280%;
+    background-position: center;
+    transition: all 1s;
+    -webkit-transition: 1s;
+    
+    
+  }
+
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+  nav.navbar-transparente {
+   padding: 3px 0px;
+   background: rgba(0, 0, 0, 0.9);
+   border: none;
+   text-align: left;
+ }
+
+
+ 
+ .capa{
+   position: relative;
+   display: table ;
+   width: 100%;
+   height: 150px;
+   
+ }
+
+ .informacao-capa{
+  height: auto;
+}
+
+
+
+.capa-inscricao{
+ 
+  width: 98%;
+  padding: 40px;
+}
+
+.body-inscricao{
+ background:url(../imagens/pizza9.jpg);
+ background-size: 250%
+}
+
+/* =========================  tela pedidos ======================== */
+.body-pedido{
+  background: url(../imagens/menupedido.jpg) no-repeat;
+  background-size: 240%;
+  overflow: auto;
+}
+
+#tela-pedido{
+  background: #fff;
+  height: auto;
+  width: auto;
+  
+  
+} 
+
+#barra-acoes{
+ 
+  height: auto;
+  padding: 3px; 
+}
+
+#div-produtos-escolhidos{
+  height: auto;
+}
+
+#produtos-escolhidos{
+ 
+  overflow: auto;
+  height: auto;
+  max-height: 200px;
+
+}
+
+.btn-opcoes:hover{
+  text-align:center;
+  height:auto;
+  margin-left: 40px;
+  transition: all 0.2s;
+  width: 80%;
+}
+
+/* ========================= Fim tela pedidos ======================== */
+

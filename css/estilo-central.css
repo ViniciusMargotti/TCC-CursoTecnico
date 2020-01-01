@@ -1,0 +1,342 @@
+/*
+* 
+* @author Vinicius Margotti
+* @version 0.1
+*/
+@import url(../bootstrap/css/mdb.min.css);
+html,body, .container-fluid{
+  height: 100%;
+  overflow: auto;
+  scrollbar-face-color:#DBDEE7;
+  scrollbar-highlight-color:#DBDEE7;
+  scrollbar-shadow-color:#A4A6AB;
+  scrollbar-3dlight-color:#DBDEE7;
+  scrollbar-arrow-color:#354274;
+  scrollbar-track-color:#EDEEF2;
+  scrollbar-darkshadow-color:#DBDEE7;
+  font-size: 14px;
+
+}
+
+
+
+
+
+
+
+body{
+  background: url('../imagens/pizza7.jpg') no-repeat;
+  background-attachment: fixed; 
+  font-family: Helvetica,Arial,Sans-serif; 
+  overflow-x: hidden;
+  background-size: 100%;
+  color: white;
+  font-size: 14px;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 16px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #212020;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: #595959;
+  -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #666;
+  -webkit-border-radius: 3px;
+}
+
+.glyphicon-dashboard{
+  font-size: 20px;
+
+
+}   
+
+th{
+  color:black;
+  text-transform: uppercase;
+}
+
+
+
+thead{
+  background: white;
+  margin-top: 5px;
+}   
+
+.form-control{
+  margin-bottom: 5px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.input-pesquisa{
+  padding: 2px;
+  color: white;
+}
+.tabs-produtos:hover{
+ color: black;
+}
+
+
+
+/* The sidebar menu */
+.sidenav {
+  text-align: left;
+  height: 100%;
+  background-color: rgba(10, 10, 30, 0.99); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  height: 100%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 20px 8px 6px 16px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #c8c8c8;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Style page content */
+.main {
+  padding: 0px 10px;
+  height: 100%;
+  overflow: hidden;
+  width: auto;
+
+}
+
+
+h3{
+  padding: 5px;
+  color: #4C4C4C;
+  font-weight: 800 ;
+  text-transform: uppercase;
+}
+#div-produtos{
+  background: rgba(10, 10, 30, 0.99);
+  height: 100%;
+  overflow: auto;
+  padding: 15px;
+}
+
+
+#div-graficos{
+
+  background: #080818; 
+  height: 100%;
+  overflow: auto;
+  padding: 15px;
+  background-size: 200%;
+  
+}
+
+#div-pedidos{
+  background: rgba(10, 10, 30, 0.96);
+  height: 650px;
+  overflow: hidden;
+  padding: 15px;
+  overflow-x: hidden;
+ 
+}
+
+.blocosg{
+  background: #080818;
+  border: 5px solid rgba(10, 10, 30, 0.96);
+  padding: 5px;
+}
+
+.blocosg:hover{
+  background:   #0a0a1e;
+  border: 5px solid rgba(10, 10, 30, 0.96);
+  padding: 5px;
+  transition: all 0.4s;
+}
+
+#div-clientes{
+  background: rgba(10, 10, 30, 0.96);
+  height: 100%;
+  overflow: auto;
+  padding: 15px; 
+}
+
+#div-informacoes-pedidos{
+  height: 100%;
+  overflow: auto;
+  padding: 15px;
+
+  
+}
+
+#div-enderecos-entrega{
+  background: rgba(10, 10, 30, 0.96);
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+
+#div-cadastro-produtos{
+  background: #c8c8c8;
+  height: auto;  
+  padding: 5px;
+}
+
+.modal .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+.modal .modal-header .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.modal .modal-footer {
+  border-top: none;
+  padding: 0;
+}
+.modal .modal-footer .btn-group > .btn:first-child {
+  border-bottom-left-radius: 0;
+}
+.modal .modal-footer .btn-group > .btn:last-child {
+  border-top-right-radius: 0;
+}
+
+
+.material-switch > input[type="checkbox"] {
+  display: none;   
+}
+
+.material-switch > label {
+  cursor: pointer;
+  height: 0px;
+  position: relative; 
+  width: 40px;  
+}
+
+.material-switch > label::before {
+  background: rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  content: '';
+  height: 16px;
+  margin-top: -8px;
+  position:absolute;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+  width: 40px;
+}
+.material-switch > label::after {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  content: '';
+  height: 24px;
+  left: -4px;
+  margin-top: -8px;
+  position: absolute;
+  top: -4px;
+  transition: all 0.3s ease-in-out;
+  width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+  background: inherit;
+  opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+  background: inherit;
+  left: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 1000px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sidenav {height: auto;}
+  .sidenav {text-align: center;}
+  .main {height: auto;}
+  #div-produtos{height:auto;}
+
+
+
+}
